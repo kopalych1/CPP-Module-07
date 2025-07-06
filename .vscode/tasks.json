@@ -1,0 +1,37 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Build ex00",
+			"type": "shell",
+			"command": "make -C /home/kopalych/Campus/Projects/CPP-Module-07/ex00/"
+		},
+		{
+			"label": "Build ex01",
+			"type": "shell",
+			"command": "make -C /home/kopalych/Campus/Projects/CPP-Module-07/ex01/"
+		},
+		{
+			"label": "Build ex02",
+			"type": "shell",
+			"command": "make -C /home/kopalych/Campus/Projects/CPP-Module-07/ex02/"
+		},
+	],
+	"compounds": [
+		{
+			"label": "Build and Debug ex00",
+			"dependsOn": ["Build ex00"],
+			"dependsOrder": "sequence"
+		},
+		{
+			"label": "Build and Debug ex01",
+			"dependsOn": ["Build ex01"],
+			"dependsOrder": "sequence"
+		},
+		{
+			"label": "Build and Debug ex02",
+			"dependsOn": ["Build ex02"],
+			"dependsOrder": "sequence"
+		},
+	],
+}
