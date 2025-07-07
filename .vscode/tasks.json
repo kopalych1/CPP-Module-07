@@ -16,6 +16,15 @@
 			"type": "shell",
 			"command": "make -C /home/kopalych/Campus/Projects/CPP-Module-07/ex02/"
 		},
+		{
+			"label": "Valgrind ex02",
+			"type": "shell",
+			"command": "valgrind --leak-check=full ./Array",
+			"options": {
+				"cwd": "${workspaceFolder}/ex02"
+			},
+			"dependsOn": ["Build ex02"]
+		}
 	],
 	"compounds": [
 		{

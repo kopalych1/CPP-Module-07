@@ -28,11 +28,11 @@
 			"name": "(gdb) Launch ex02",
 			"type": "cppdbg",
 			"request": "launch",
-			"program": "/home/kopalych/Campus/Projects/CPP-Module-07/ex02/____",
+			"program": "/home/kopalych/Campus/Projects/CPP-Module-07/ex02/Array",
 			"cwd": "/home/kopalych/Campus/Projects/CPP-Module-07/ex02/",
 			"preLaunchTask": "Build ex02",
 			// ...other settings...
-			"args": ["${input:ex02_argsInput}"],
+			// "args": ["${input:ex02_argsInput}"],
 		}
 	],
 	"inputs": [
@@ -42,17 +42,17 @@
 		// 	"description": "Please enter aguments for the program",
 		// 	"default": ""
 		// },
-		{
-			"id": "ex01_argsInput",
-			"type": "promptString",
-			"description": "Please enter aguments for the program",
-			"default": ""
-		},
-		{
-			"id": "ex02_argsInput",
-			"type": "promptString",
-			"description": "Please enter aguments for the program",
-			"default": ""
-		},
+		// {
+		// 	"id": "ex01_argsInput",
+		// 	"type": "promptString",
+		// 	"description": "Please enter aguments for the program",
+		// 	"default": ""
+		// },
+		// {
+		// 	"id": "ex02_argsInput",
+		// 	"type": "promptString",
+		// 	"description": "Please enter aguments for the program",
+		// 	"default": ""
+		// },
 	],
 }
