@@ -6,7 +6,7 @@
 #    By: akostian <akostian@student.s19.be>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/05/26 16:43:30 by akostian          #+#    #+#              #
-#    Updated: 2025/07/07 03:24:50 by akostian         ###   ########.fr        #
+#    Updated: 2025/07/08 00:10:09 by akostian         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -55,10 +55,6 @@ $(LOG_DIR):
 
 
 $(BUILD_DIR)/%.o: $(SRC_DIR)/%.cpp | $(BUILD_DIR)
-	$(CC) $(CFLAGS) -c $< -o $@
-#
-
-$(BUILD_DIR)/%.o: $(SRC_DIR)/%.tpp  | $(BUILD_DIR)
 	$(CC) $(CFLAGS) -c $< -o $@
 #
 
