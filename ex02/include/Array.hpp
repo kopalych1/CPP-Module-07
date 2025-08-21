@@ -11,30 +11,30 @@
 /* ************************************************************************** */
 
 #ifndef ARRAY_HPP
-# define ARRAY_HPP
+#define ARRAY_HPP
 
-# include <iostream>
+#include <iostream>
 
 template <typename T>
 class Array {
-	private:
-		size_t	size_;
-		T		*value_;
+   private:
+	size_t size_;
+	T* value_;
 
-	public:
-		Array();
-		Array(const unsigned int n);
-		Array(const Array& other);
-		Array& operator=(const Array& other);
-		~Array();
+   public:
+	Array();
+	Array(const unsigned int n);
+	Array(const Array& other);
+	Array& operator=(const Array& other);
+	~Array();
 
-		T&						operator[](size_t index);
-		template <typename U>
-		friend std::ostream& operator<<(std::ostream& os, const Array<U>& arr);
+	T& operator[](size_t index);
+	template <typename U>
+	friend std::ostream& operator<<(std::ostream& os, const Array<U>& arr);
 
-		size_t	size(void) const;
+	size_t size(void) const;
 };
 
-# include "Array.tpp"
+#include "Array.tpp"
 
-#endif // ARRAY_HPP
+#endif  // ARRAY_HPP

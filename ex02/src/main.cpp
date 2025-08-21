@@ -6,14 +6,13 @@
 /*   By: akostian <akostian@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/07 02:09:08 by akostian          #+#    #+#             */
-/*   Updated: 2025/07/07 04:41:40 by akostian         ###   ########.fr       */
+/*   Updated: 2025/08/21 17:16:49 by akostian         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/Array.hpp"
 
-int main(void)
-{
+int main(void) {
 	{
 		Array<int> arr(4);
 
@@ -28,7 +27,11 @@ int main(void)
 		std::cout << arr[3] << "\n";
 
 		// Throws an exeption
-		// std::cout << arr[4] << "\n";
+		try {
+			std::cout << arr[4] << "\n";
+		} catch (const std::exception& e) {
+			std::cerr << e.what() << '\n';
+		}
 	}
 	{
 		Array<float> arr(2);
@@ -48,10 +51,12 @@ int main(void)
 		std::cout << arr << "\n";
 	}
 	{
-		std::cout << "\n" << ">===== Deep copy =====<\n" << "\n";
+		std::cout << "\n"
+		          << ">===== Deep copy =====<\n"
+		          << "\n";
 
-		Array<std::string>	arr1(3);
-		Array<std::string>	arr2;
+		Array<std::string> arr1(3);
+		Array<std::string> arr2;
 
 		arr1[0] = "Hello";
 		arr1[1] = "Campus";

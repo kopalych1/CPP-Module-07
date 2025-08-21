@@ -11,15 +11,13 @@
 /* ************************************************************************** */
 
 #ifndef ITER_HPP
-# define ITER_HPP
+#define ITER_HPP
 
-# include <stdlib.h>
+#include <stdlib.h>
 
 template <typename T, typename F>
-void iter(T *arr, size_t len, F f)
-{
-	for (size_t i = 0; i < len; i++)
-		f(arr[i]);
+void iter(T *arr, size_t len, F f) {
+	for (size_t i = 0; i < len; i++) f(arr[i]);
 }
 
-#endif // ITER_HPP
+#endif  // ITER_HPP

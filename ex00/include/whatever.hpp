@@ -11,11 +11,10 @@
 /* ************************************************************************** */
 
 #ifndef WHATEVER_HPP
-# define WHATEVER_HPP
+#define WHATEVER_HPP
 
 template <typename T>
-void	swap(T &a, T &b)
-{
+void swap(T &a, T &b) {
 	T tmp;
 	tmp = a;
 	a = b;
@@ -23,20 +22,15 @@ void	swap(T &a, T &b)
 }
 
 template <typename T>
-const T &min(const T &a, const T &b)
-{
-	if (a < b)
-		return a;
+const T &min(const T &a, const T &b) {
+	if (a < b) return a;
 	return b;
 }
-
 
 template <typename T>
-const T &max(const T &a, const T &b)
-{
-	if (a > b)
-		return a;
+const T &max(const T &a, const T &b) {
+	if (a > b) return a;
 	return b;
 }
 
-#endif // WHATEVER_HPP
+#endif  // WHATEVER_HPP
