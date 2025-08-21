@@ -6,7 +6,7 @@
 /*   By: akostian <akostian@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/07 02:09:08 by akostian          #+#    #+#             */
-/*   Updated: 2025/08/21 17:16:49 by akostian         ###   ########.fr       */
+/*   Updated: 2025/08/21 17:50:43 by akostian         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,14 +66,20 @@ int main(void) {
 		std::cout << "arr2: " << arr2 << "\n";
 
 		arr2 = arr1;
+		Array<std::string> arr3(arr1);
 
 		std::cout << "arr1: " << arr1 << "\n";
 		std::cout << "arr2: " << arr2 << "\n";
+		std::cout << "arr3: " << arr3 << "\n";
 
-		arr2[1] = "BOB";
-		arr2[0] = "12312312312312";
+		arr1[0] = "BOB";
+		arr2[0] = "1231231";
+		arr3[0] = "HEHEHEHE";
+
+		std::cout << "After change:" << '\n';
 
 		std::cout << "arr1: " << arr1 << "\n";
 		std::cout << "arr2: " << arr2 << "\n";
+		std::cout << "arr3: " << arr3 << "\n";
 	}
 }
